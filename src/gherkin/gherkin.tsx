@@ -58,7 +58,7 @@ const Gherkin = () => {
           { regex: /^(\s)*Then/, action: { token: "keyword" } },
           { regex: /^(\s)*And/, action: { token: "keyword" } },
           { regex: /^(\s)*But/, action: { token: "keyword" } },
-          { regex: /('[a-zA-Z0-9\s--_]<->+')/, action: { token: "string" } },
+          { regex: /('[a-zA-Z0-9\s--_<->]+')/, action: { token: "string" } },
           { regex: /(#).*$/, action: { token: 'comment' } },
         ]
       }
